@@ -387,8 +387,8 @@ axes[0].legend()
 axes[0].set_ylim(0, 1.05)
 axes[0].grid(True, alpha=0.3)
 for i, (tr, te) in enumerate(zip(train_r2_e, test_r2_e)):
-    axes[0].text(i - width, tr + 0.02, f'{tr:.2f}', ha='center', fontsize=9)
-    axes[0].text(i, te + 0.02, f'{te:.2f}', ha='center', fontsize=9)
+    axes[0].text(i - width, max(0, tr) + 0.02, f'{tr:.2f}', ha='center', fontsize=9)
+    axes[0].text(i, max(0, te) + 0.02, f'{te:.2f}', ha='center', fontsize=9)
 
 # CO2 comparison
 train_r2_c = [results['CO2'][m]['train_r2'] for m in model_names]
@@ -403,8 +403,8 @@ axes[1].legend()
 axes[1].set_ylim(0, 1.05)
 axes[1].grid(True, alpha=0.3)
 for i, (tr, te) in enumerate(zip(train_r2_c, test_r2_c)):
-    axes[1].text(i - width, tr + 0.02, f'{tr:.2f}', ha='center', fontsize=9)
-    axes[1].text(i, te + 0.02, f'{te:.2f}', ha='center', fontsize=9)
+    axes[1].text(i - width, max(0, tr) + 0.02, f'{tr:.2f}', ha='center', fontsize=9)
+    axes[1].text(i, max(0, te) + 0.02, f'{te:.2f}', ha='center', fontsize=9)
 
 plt.tight_layout()
 img_model_comp = fig_to_base64(fig)
