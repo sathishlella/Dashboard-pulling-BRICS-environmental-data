@@ -1430,9 +1430,9 @@ def main():
     # Sidebar navigation
     with st.sidebar:
         st.markdown("""
-        <div style='text-align:center; margin-bottom:24px; padding-bottom:20px; border-bottom:1px solid rgba(0,0,0,0.06);'>
-            <div style='font-size:1.6rem; font-weight:700; color:#1d1d1f; letter-spacing:-0.02em;'>ML Live Lab</div>
-            <div style='font-size:0.8rem; color:#86868b; margin-top:4px;'>Dr. Danish Research</div>
+        <div style='text-align:center; margin-bottom:24px; padding-bottom:20px; border-bottom:1px solid rgba(128,128,128,0.2);'>
+            <div style='font-size:1.6rem; font-weight:700; color:var(--text-color); letter-spacing:-0.02em;'>ML Live Lab</div>
+            <div style='font-size:0.8rem; color:var(--text-color); opacity:0.7; margin-top:4px;'>Designed by Sathish Lella</div>
         </div>
         """, unsafe_allow_html=True)
         
@@ -1469,7 +1469,7 @@ def main():
         </div>
         """, unsafe_allow_html=True)
         
-        st.markdown("<div class='footer-text' style='margin-top:60px;'>Built with Streamlit<br>Apple-inspired Design</div>", unsafe_allow_html=True)
+        # Removed footer text
     
     # Route to page
     page = st.session_state.page
