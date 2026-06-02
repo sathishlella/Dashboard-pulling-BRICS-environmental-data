@@ -6,4 +6,5 @@ venv/
 *.log
 .streamlit/
 *.xlsx
+!Tourism carbon emissions data.xlsx
 *.pdf
