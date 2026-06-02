@@ -18,24 +18,23 @@ Interactive machine learning dashboard for analyzing tourism energy consumption 
 ## Setup
 
 ```bash
-pip install -r tourism_co2/requirements.txt
+pip install -r requirements.txt
 ```
 
 ## Run
 
 ```bash
-cd tourism_co2
-streamlit run live_ml_dashboard.py
+streamlit run dashboard.py
 ```
 
 ## Data
 
-Place `Tourism carbon emissions data.xlsx` in the `tourism_co2/` directory (not included in repo).
+Place `Tourism carbon emissions data.xlsx` in the repository root (not included in repo).
 
 ## Report Generator
 
 ```bash
-python tourism_co2/generate_ml_report_for_professor.py
+python generate_ml_report_for_professor.py
 ```
 
 Generates `ml_report_for_professor.html` — a static HTML research report with identical model configurations.
