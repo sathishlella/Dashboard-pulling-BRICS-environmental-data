@@ -1459,13 +1459,13 @@ def main():
         status_color = "#34c759" if st.session_state.models_trained else "#ff9500"
         status_text = "Models Ready" if st.session_state.models_trained else "Models Not Trained"
         st.markdown(f"""
-        <div style='background:#f5f5f7; border-radius:12px; padding:14px; margin-top:20px;'>
-            <div style='font-size:0.75rem; color:#86868b; text-transform:uppercase; letter-spacing:0.06em; font-weight:600; margin-bottom:6px;'>System Status</div>
+        <div style='background-color: var(--secondary-background-color); border-radius:12px; padding:14px; margin-top:20px; border: 1px solid rgba(128,128,128,0.2);'>
+            <div style='font-size:0.75rem; color: var(--text-color); opacity: 0.7; text-transform:uppercase; letter-spacing:0.06em; font-weight:600; margin-bottom:6px;'>System Status</div>
             <div style='display:flex; align-items:center; gap:8px;'>
                 <div style='width:8px; height:8px; border-radius:50%; background:{status_color};'></div>
-                <div style='font-size:0.9rem; font-weight:600; color:#1d1d1f;'>{status_text}</div>
+                <div style='font-size:0.9rem; font-weight:600; color: var(--text-color);'>{status_text}</div>
             </div>
-            <div style='font-size:0.75rem; color:#86868b; margin-top:4px;'>{len(df):,} rows loaded</div>
+            <div style='font-size:0.75rem; color: var(--text-color); opacity: 0.7; margin-top:4px;'>{len(df):,} rows loaded</div>
         </div>
         """, unsafe_allow_html=True)
         
